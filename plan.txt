@@ -1,0 +1,100 @@
+Screens
+
+URL: /
+
+Home screen
+- Explanation of cup generator
+- Click to generate cup
+- Login
+- Register
+
+URL: /generate-cup
+
+Create cup screen
+
+Should display progress bar at the top
+
+URL: /generate-cup/step1
+
+Step 1
+
+- Name of cup
+- Number of teams
+
+-- Optional, automatic fixture date options
+- Weekly, Fornightly, Monthly
+- Specfied dates
+
+-- Optional, otherwise gets generated as Team A, B, C etc
+Enter team details
+- Team name
+- Manager name
+- Badge
+
+-- Optional, draw automatically
+- Button to generate cup
+
+URL: /generate-cup/step2
+Step 2
+
+Draw options screen
+- Draw teams now
+- Scheduled draw time
+
+URL: /generate-cup/step3
+Step 3 
+
+Draw screen 
+- Scheduled draw 
+- Team A vs Team B
+- List of drawn fixtures
+- Draw complete - go to dasboard
+
+Once draw is complete user is automatically sent to dashboard
+
+Step 4
+/dashboard
+Dashboard
+
+Logged in area
+
+Dashboard screen
+- Show number of active competitions
+- Options to edit / add / delete competitions
+
+URL: /dashboard/{compID}
+Competition home screen
+- Show latest cup fixtures
+- Route to the cup link
+- Edit league
+- Delete league
+- Previous cups / winners / current holder / history
+
+URL: /dashboard/{compID}/edit
+- Edit team data (edit / add / remove teams)
+- Edit fixture details
+- Redraw
+
+URL: /dashboard/{leagueID}/route
+Route to the cup screen
+- Draw diagram CSS GRID
+
+URL: /dashboard/{leagueID}/edit
+
+Tech details
+
+FE
+React
+Redux
+
+BE
+Node
+Express - REST API
+Mongoose
+
+Login 
+Passport
+
+Server side rendered home screen / any other SEO friendly screen
+
+
